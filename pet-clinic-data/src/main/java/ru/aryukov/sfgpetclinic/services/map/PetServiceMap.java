@@ -1,5 +1,6 @@
 package ru.aryukov.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import ru.aryukov.sfgpetclinic.model.Pet;
 import ru.aryukov.sfgpetclinic.services.PetService;
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:tx="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List of owners</title>
+</head>
+<body>
+    <h1 tx:text="'List of owners'">Owners List</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="owner:${owners}">
+            <td th:text="${owner.id}">1</td>
+            <td th:text="${owner.firstName}">Joe</td>
+            <td th:text="${owner.lastName}">Buck</td>
+        </tr>
+        </tbody>
+    </table>
+
+<!--<div class="row">-->
+<!--<div class="col-md-12">-->
+<!--<img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}"/>-->
+<!--</div>-->
+<!--</div>-->
+
+</body>
+</html>
